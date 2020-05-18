@@ -3,4 +3,4 @@ steps:
     command:
       - "docker build --no-cache -t $AWS_ECR_URI:$DOCKER_TAG ."
       - "docker push $AWS_ECR_URI:$DOCKER_TAG"
-    branches: "master"
+    # branches: "master"
