@@ -5,6 +5,7 @@ mkdir -p /go/src/github.com/gliderlabs
 cp -r /src /go/src/github.com/gliderlabs/logspout
 cd /go/src/github.com/gliderlabs/logspout
 export GOPATH=/go
+go get -u=patch github.com/returnly/logspout/logdna@v1.2.1
 go get
 go build -ldflags "-X main.Version=$1" -o /bin/logspout
 apk del go git mercurial build-base
